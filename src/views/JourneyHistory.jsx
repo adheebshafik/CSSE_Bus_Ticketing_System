@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PlanYourJourney() {
+function JourneyHistory() {
     return (
         <div>
             Plan your journeys
@@ -8,4 +8,4 @@ function PlanYourJourney() {
     )
 }
 
-export default PlanYourJourney
+export default JourneyHistory

@@ -20,12 +20,12 @@ import UserProfile from "views/UserProfile.jsx";
 import TableList from "views/TableList.jsx";
 import Typography from "views/Typography.jsx";
 import Icons from "views/Icons.jsx";
-import Maps from "views/Maps.jsx";
+import Plan_Your_Journey from "views/Plan_Your_Journey.jsx";
 import Notifications from "views/Notifications.jsx";
 import GetSmartCard from "views/GetSmartCard";
 import TopUpAccount from "views/TopUpAccount";
 import Timetables from "views/Timetables";
-import PlanYourJourney from "views/PlanYourJourney";
+import JourneyHistory from "views/JourneyHistory";
 import Upgrade from "views/Upgrade.jsx";
 
 const dashboardRoutes = [
@@ -65,10 +65,10 @@ const dashboardRoutes = [
   //   layout: "/admin"
   // },
   {
-    path: "/maps",
-    name: "Maps",
+    path: "/planYourJourney",
+    name: "Plan Your Journey",
     icon: "pe-7s-map-marker",
-    component: Maps,
+    component: Plan_Your_Journey,
     layout: "/admin"
   },
   // {
@@ -100,10 +100,10 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/planYourJourney",
-    name: "Plan Your Journey",
-    icon: "pe-7s-paper-plane",
-    component: PlanYourJourney,
+    path: "/journeyHistory",
+    name: "Journey History",
+    icon: "pe-7s-display1",
+    component: JourneyHistory,
     layout: "/admin"
   }
   

@@ -34,7 +34,7 @@ const CustomMap = withScriptjs(
   ))
 );
 
-function Maps({ ...prop }) {
+function Plan_Your_Journey({ ...prop }) {
   return (
     <div className="content">
       <Row>
@@ -98,4 +98,4 @@ function Maps({ ...prop }) {
   );
 }
 
-export default Maps;
+export default Plan_Your_Journey;
