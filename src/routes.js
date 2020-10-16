@@ -16,6 +16,7 @@
 
 */
 import Dashboard from "views/Dashboard.jsx";
+import Login from "views/Login.jsx";
 import UserProfile from "views/UserProfile.jsx";
 import TableList from "views/TableList.jsx";
 import Typography from "views/Typography.jsx";
@@ -36,41 +37,41 @@ const dashboardRoutes = [
     component: Dashboard,
     layout: "/admin"
   },
-  {
-    path: "/planYourJourney",
-    name: "Plan Your Journey",
-    icon: "pe-7s-map-marker",
-    component: Plan_Your_Journey,
-    layout: "/admin"
-  },
-  {
-    path: "/getSmartCard",
-    name: "Get Your Smart Card",
-    icon: "pe-7s-id",
-    component: GetSmartCard,
-    layout: "/admin"
-  },
-  {
-    path: "/topUpAccount",
-    name: "Top Up My Account",
-    icon: "pe-7s-wallet",
-    component: TopUpAccount,
-    layout: "/admin"
-  },
-  {
-    path: "/timetable",
-    name: "Timetables",
-    icon: "pe-7s-stopwatch",
-    component: Timetables,
-    layout: "/admin"
-  },
-  {
-    path: "/journeyHistory",
-    name: "Journey History",
-    icon: "pe-7s-display1",
-    component: JourneyHistory,
-    layout: "/admin"
-  }
+  // {
+  //   path: "/planYourJourney",
+  //   name: "Plan Your Journey",
+  //   icon: "pe-7s-map-marker",
+  //   component: Plan_Your_Journey,
+  //   layout: "/admin"
+  // },
+  // {
+  //   path: "/getSmartCard",
+  //   name: "Get Your Smart Card",
+  //   icon: "pe-7s-id",
+  //   component: GetSmartCard,
+  //   layout: "/admin"
+  // },
+  // {
+  //   path: "/topUpAccount",
+  //   name: "Top Up My Account",
+  //   icon: "pe-7s-wallet",
+  //   component: TopUpAccount,
+  //   layout: "/admin"
+  // },
+  // {
+  //   path: "/timetable",
+  //   name: "Timetables",
+  //   icon: "pe-7s-stopwatch",
+  //   component: Timetables,
+  //   layout: "/admin"
+  // },
+  // {
+  //   path: "/journeyHistory",
+  //   name: "Journey History",
+  //   icon: "pe-7s-display1",
+  //   component: JourneyHistory,
+  //   layout: "/admin"
+  // },
   // {
   //   path: "/user",
   //   name: "User Profile",
