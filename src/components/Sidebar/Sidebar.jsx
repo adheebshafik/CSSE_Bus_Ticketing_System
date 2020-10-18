@@ -20,7 +20,7 @@ import { NavLink } from "react-router-dom";
 
 import AdminNavbarLinks from "../Navbars/AdminNavbarLinks.jsx";
 
-import logo from "assets/img/reactlogo.png";
+import logo from "assets/img/bellLogo.jpeg";
 
 class Sidebar extends Component {
   constructor(props) {
@@ -45,35 +45,147 @@ class Sidebar extends Component {
     };
     return (
       <div
+
         id="sidebar"
         className="sidebar"
         data-color={this.props.color}
-        data-image={this.props.image}
       >
-          {this.props.hasImage ? (
-            <div className="sidebar-background" style={sidebarBackground} />
-          ) : (
+        {this.props.hasImage ? (
+          <div className="sidebar-background" style={sidebarBackground} />
+        ) : (
             null
           )}
-        <div className="logo">
-          <a
-            href="https://www.creative-tim.com?ref=lbd-sidebar"
-            className="simple-text logo-mini"
-          >
-            <div className="logo-img">
-              <img src={logo} alt="logo_image" />
-            </div>
-          </a>
-          <a
-            href="https://www.creative-tim.com?ref=lbd-sidebar"
-            className="simple-text logo-normal"
-          >
-           SL Transport Board 
-          </a>
+        <div className="logo" style={{ backgroundColor: "#ECEBEB" }}>
+
+          <div className="logo-img" style={{ backgroundColor: "#ECEBEB", height: 150 }}>
+            <img src={logo} style={{ width: 210 }} alt="logo_image" />
+          </div>
+
         </div>
-        <div className="sidebar-wrapper">
+
+
+        <div style={{ backgroundColor: "#ECEBEB" }} className="sidebar-wrapper">
           <ul className="nav">
-            {this.state.width <= 991 ? <AdminNavbarLinks /> : null}
+
+            <li >
+              <p style={{ textAlign: "center", fontSize: 14, color: "black" }}>Route Statistics</p>
+            </li>
+            <li >
+              <NavLink
+                to='/admin/passengerTimeDistribution'
+                className="nav-link"
+                activeClassName="active"
+                style={{ textAlign: "center", color: "black" }}
+              >
+                <i className="ac_unit" />
+                <p>Passenger-Time Distribution</p>
+              </NavLink>
+            </li>
+
+            <li >
+              <NavLink
+                to='/admin/passengerRouteDistribution'
+                className="nav-link"
+                activeClassName="active"
+                style={{ textAlign: "center", color: "black" }}
+              >
+                <i className="ac_unit" />
+                <p>Passenger-Route Distribution</p>
+              </NavLink>
+            </li>
+
+            <hr />
+            <li >
+              <p style={{ textAlign: "center", fontSize: 14, color: "black" }}>Fare Statistics</p>
+            </li>
+            <li >
+              <NavLink
+                to='/admin/fareCollectionSummary'
+                className="nav-link"
+                activeClassName="active"
+                style={{ textAlign: "center", color: "black" }}
+              >
+                <i className="ac_unit" />
+                <p>Fare Collection Summary</p>
+              </NavLink>
+            </li>
+
+            <li >
+              <NavLink
+                to='/admin/fareCollectedByTime'
+                className="nav-link"
+                activeClassName="active"
+                style={{ textAlign: "center", color: "black" }}
+              >
+                <i className="ac_unit" />
+                <p>Fare Collected By Time</p>
+              </NavLink>
+            </li>
+            <li >
+              <NavLink
+                to='/admin/fareCollectedByRoute'
+                className="nav-link"
+                activeClassName="active"
+                style={{ textAlign: "center", color: "black" }}
+              >
+                <i className="ac_unit" />
+                <p>Fare Collected By Route</p>
+              </NavLink>
+            </li>
+            <hr />
+            <li >
+              <p style={{ textAlign: "center", fontSize: 14, color: "black" }}>Violation Statistics</p>
+            </li>
+            <li >
+              <NavLink
+                to='/admin/violationTimeDistribution'
+                className="nav-link"
+                activeClassName="active"
+                style={{ textAlign: "center", color: "black" }}
+              >
+                <i className="ac_unit" />
+                <p>Violation-Time Distribution</p>
+              </NavLink>
+            </li>
+
+            <li >
+              <NavLink
+                to='/admin/violationRouteDistribution'
+                className="nav-link"
+                activeClassName="active"
+                style={{ textAlign: "center", color: "black" }}
+              >
+                <i className="ac_unit" />
+                <p>Violation-Route Distribution</p>
+              </NavLink>
+            </li>
+
+            <hr />
+            <li >
+              <NavLink
+                to='/admin/addTimetable'
+                className="nav-link"
+                activeClassName="active"
+                style={{ textAlign: "center", color: "black" }}
+              >
+                <i className="ac_unit" />
+                <p>Add Timetable</p>
+              </NavLink>
+            </li>
+
+            <li >
+              <NavLink
+                to='/admin/viewTimetable'
+                className="nav-link"
+                activeClassName="active"
+                style={{ textAlign: "center", color: "black" }}
+              >
+                <i className="ac_unit" />
+                <p>View Timetable</p>
+              </NavLink>
+            </li>
+
+            {/* {this.state.width <= 991 ? <AdminNavbarLinks /> : null}
             {this.props.routes.map((prop, key) => {
               if (!prop.redirect)
                 return (
@@ -90,13 +202,12 @@ class Sidebar extends Component {
                       className="nav-link"
                       activeClassName="active"
                     >
-                      <i className={prop.icon} />
-                      <p>{prop.name}</p>
+                      <p style={{color: "black"}}>{prop.name}</p>
                     </NavLink>
                   </li>
                 );
               return null;
-            })}
+            })} */}
           </ul>
         </div>
       </div>

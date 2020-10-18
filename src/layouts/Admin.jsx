@@ -36,7 +36,7 @@ class Admin extends Component {
     this.state = {
       _notificationSystem: null,
       image: image,
-      color: "black",
+      color: "white",
       hasImage: true,
       fixedClasses: "dropdown show-dropdown open"
     };
@@ -179,12 +179,12 @@ class Admin extends Component {
         color={this.state.color}
         hasImage={this.state.hasImage}/>
         <div id="main-panel" className="main-panel" ref="mainPanel">
-          <AdminNavbar
+          {/* <AdminNavbar 
             {...this.props}
             brandText={this.getBrandText(this.props.location.pathname)}
-          />
+          /> */}
           <Switch>{this.getRoutes(routes)}</Switch>
-          <Footer />
+          {/* <Footer /> */}
           {/* <FixedPlugin
             handleImageClick={this.handleImageClick}
             handleColorClick={this.handleColorClick}

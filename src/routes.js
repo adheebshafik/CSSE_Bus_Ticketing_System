@@ -16,98 +16,88 @@
 
 */
 import Dashboard from "views/Dashboard.jsx";
+import PassengerTimeDistribution from "views/PassengerTimeDIstribution";
+import PassengerRouteDistribution from "views/PassengerRouteDistribution";
+import FareCollectionSummary from "views/FareCollectionSummary";
+import FareCollectedByTime from "views/FareCollectedByTime";
+import FareCollectedByRoute from "views/FareCollectedByRoute";
+import ViolationTimeDistribution from "views/ViolationTimeDistribution";
+import ViolationRouteDistribution from "views/ViolationRouteDistribution";
 import Login from "views/Login.jsx";
-import UserProfile from "views/UserProfile.jsx";
-import TableList from "views/TableList.jsx";
-import Typography from "views/Typography.jsx";
-import Icons from "views/Icons.jsx";
-import Plan_Your_Journey from "views/Plan_Your_Journey.jsx";
-import Notifications from "views/Notifications.jsx";
-import GetSmartCard from "views/GetSmartCard";
-import TopUpAccount from "views/TopUpAccount";
-import Timetables from "views/Timetables";
-import JourneyHistory from "views/JourneyHistory";
-import Upgrade from "views/Upgrade.jsx";
+import AddTimetableSubView from "views/AddTimetableSubView";
+import ViewTimetable from "views/ViewTimetable";
 
 const dashboardRoutes = [
   {
     path: "/dashboard",
     name: "Dashboard",
-    icon: "pe-7s-graph",
     component: Dashboard,
     layout: "/admin"
   },
-  // {
-  //   path: "/planYourJourney",
-  //   name: "Plan Your Journey",
-  //   icon: "pe-7s-map-marker",
-  //   component: Plan_Your_Journey,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/getSmartCard",
-  //   name: "Get Your Smart Card",
-  //   icon: "pe-7s-id",
-  //   component: GetSmartCard,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/topUpAccount",
-  //   name: "Top Up My Account",
-  //   icon: "pe-7s-wallet",
-  //   component: TopUpAccount,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/timetable",
-  //   name: "Timetables",
-  //   icon: "pe-7s-stopwatch",
-  //   component: Timetables,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/journeyHistory",
-  //   name: "Journey History",
-  //   icon: "pe-7s-display1",
-  //   component: JourneyHistory,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/user",
-  //   name: "User Profile",
-  //   icon: "pe-7s-user",
-  //   component: UserProfile,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/table",
-  //   name: "Table List",
-  //   icon: "pe-7s-note2",
-  //   component: TableList,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/typography",
-  //   name: "Typography",
-  //   icon: "pe-7s-news-paper",
-  //   component: Typography,
-  //   layout: "/admin"
-  // },
-  // {
-  //   path: "/icons",
-  //   name: "Icons",
-  //   icon: "pe-7s-science",
-  //   component: Icons,
-  //   layout: "/admin"
-  // },
+  {
+    path: "/passengerTimeDistribution",
+    name: "Passenger Time Distribution",
+    component: PassengerTimeDistribution,
+    layout: "/admin"
+  },
+  {
+    path: "/passengerRouteDistribution",
+    name: "Passenger Route Distribution",
+    component: PassengerRouteDistribution,
+    layout: "/admin"
+  },
+  {
+    path: "/fareCollectionSummary",
+    name: "Fare Collection Summary",
+    component: FareCollectionSummary,
+    layout: "/admin"
+  },
+  {
+    path: "/fareCollectedByTime",
+    name: "Fare Collected By Time",
+    component: FareCollectedByTime,
+    layout: "/admin"
+  },
+  {
+    path: "/fareCollectedByRoute",
+    name: "Fare Collected By Route",
+    component: FareCollectedByRoute,
+    layout: "/admin"
+  },
+  {
+    path: "/violationTimeDistribution",
+    name: "Violation Time Distribution",
+    component: ViolationTimeDistribution,
+    layout: "/admin"
+  },
+  {
+    path: "/violationRouteDistribution",
+    name: "Violation Route Distribution",
+    component: ViolationRouteDistribution,
+    layout: "/admin"
+  },
+  {
+    path: "/addTimetable",
+    name: "Add Timetable",
+    icon: "pe-7s-map-marker",
+    component: AddTimetableSubView,
+    layout: "/admin"
+  },
+  {
+    path: "/viewTimetable",
+    name: "View Timetable",
+    icon: "pe-7s-id",
+    component: ViewTimetable,
+    layout: "/admin"
+  },
+  {
+    path: "/login",
+    name: "Login",
+    icon: "pe-7s-wallet",
+    component: Login,
+    layout: "/admin"
+  },
  
-  // {
-  //   path: "/notifications",
-  //   name: "Notifications",
-  //   icon: "pe-7s-bell",
-  //   component: Notifications,
-  //   layout: "/admin"
-  // },
 
   
 ];
